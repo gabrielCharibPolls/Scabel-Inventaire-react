@@ -1,14 +1,15 @@
-import CardContainer from "./components/Cards/CardContainer";
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LoginPage from "./pages/LoginPage"; // Chemin vers ta page de connexion
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <CardContainer/>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
 
-      </header>
-    </div>
+      </Routes>
+    </Router>
   );
 }
 
