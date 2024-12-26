@@ -6,7 +6,7 @@ import Checkbox from '@mui/material/Checkbox';
 
 
 
-export default function SignInButtons() {
+export default function SignInButtons({onClick}) {
   return (
     <>
       <FormControlLabel

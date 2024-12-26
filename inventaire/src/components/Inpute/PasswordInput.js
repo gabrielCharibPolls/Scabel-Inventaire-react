@@ -1,24 +1,22 @@
-import React from 'react';
-import TextField from '@mui/material/TextField';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
+import * as React from "react";
+import TextField from "@mui/material/TextField";
+import FormLabel from "@mui/material/FormLabel";
 
-export default function PasswordInput() {
-  const [error, setError] = React.useState(false);
-  const [errorMessage, setErrorMessage] = React.useState('');
-
+export default function PasswordInput({ value, onChange }) {
   return (
-    <FormControl>
+    <div>
       <FormLabel htmlFor="password">Password</FormLabel>
       <TextField
         id="password"
         type="password"
-        placeholder="••••••"
-        error={error}
-        helperText={errorMessage}
-        fullWidth
+        name="password"
+        placeholder="Enter your password"
+        value={value}
+        onChange={onChange}
         required
+        fullWidth
+        variant="outlined"
       />
-    </FormControl>
+    </div>
   );
 }
