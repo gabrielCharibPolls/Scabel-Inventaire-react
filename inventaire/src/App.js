@@ -1,11 +1,11 @@
-import ButtonLogin from "./components/Buttons/ButtonLogin";
-import InputeEmail from "./components/Inpute/inpute";
+import CardContainer from "./components/Cards/CardContainer";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <InputeEmail></InputeEmail>
+        <CardContainer/>
 
       </header>
     </div>
